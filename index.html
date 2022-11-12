@@ -666,6 +666,55 @@
             <use href="./images/icons.svg#icon-btn-closed"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label for="" class="modal-label-list">
+            <p class="input-title">Ім'я</p>
+            <input type="name" name="name" required class="modal-input" />
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-name-modal"></use>
+            </svg>
+          </label>
+          <label for="" class="modal-label-list">
+            <p class="input-title">Телефон</p>
+            <input
+              type="tel"
+              name="phone-number"
+              required
+              class="modal-input"
+            />
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-phone-modal"></use>
+            </svg>
+          </label>
+          <label for="" class="modal-label-list">
+            <p class="input-title">Пошта</p>
+            <input type="email" name="email" required class="modal-input" />
+            <svg class="modal-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-mail-modal"></use>
+            </svg>
+          </label>
+          <label for="" class="modal-label-list">
+            <p class="input-title">Коментар</p>
+            <textarea
+              name="comment"
+              class="modal-comment"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+        </form>
+        <button type="button" class="btn-checkbox">
+          <svg class="modal-checkbox" width="16" height="15">
+            <use href="./images/icons.svg#icon-checkbox-modal"></use>
+          </svg>
+          <svg class="modal-checkbox-active" width="11" height="8">
+            <use href="./images/icons.svg#icon-checkbox-modal-hover"></use>
+          </svg>
+          Погоджуюся з розсилкою та приймаю
+        </button>
+        <a href="" class="">Умови договору</a>
+        <button type="submit">Відправити</button>
       </div>
     </div>
 
