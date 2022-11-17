@@ -658,6 +658,12 @@ p {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+.user-email::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .btn-subscription {
   display: flex;
   align-items: center;
@@ -673,6 +679,13 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-subscription:hover,
+.btn-subscription:focus {
+  background: #188ce8;
 }
 /*=========================backdrop========================= */
 .backdrop {
@@ -695,7 +708,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -725,6 +738,7 @@ p {
 .btn-closed:hover,
 .btn-closed:focus {
   fill: #2196f3;
+  outline: none;
 }
 .modal-form {
   display: flex;
@@ -753,7 +767,7 @@ p {
 .input-title {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
@@ -761,6 +775,7 @@ p {
 .modal-input {
   max-width: 448px;
   height: 40px;
+  font-size: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -769,6 +784,7 @@ p {
   transition-property: border-color;
   transition-duration: var(--animation-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal-input:focus,
 .modal-comment:focus {
@@ -799,19 +815,75 @@ p {
   transition-property: border-color;
   transition-duration: var(--animation-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.btn-checkbox {
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-contract {
+  margin-bottom: 30px;
+  margin-left: 12px;
+}
+.modal-box-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal-contract {
   display: block;
-  outline: none;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0;
-  margin-left: 40px;
-  padding: 0;
-  border: 0;
+  user-select: none;
   background-color: inherit;
+}
+.modal-contract .modal-link-contract {
+  color: #2196f3;
+  text-underline-position: under;
+}
+.checkbox-modal {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  appearance: none;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  outline: none;
+  transition: border var(--animation-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--animation-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    background-image var(--animation-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-modal:checked {
+  border: none;
+  background: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' fill='none'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+}
+.btn-contract {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: block;
+  margin: auto;
+  padding: 10px 52px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
   cursor: pointer;
+  transition-property: border-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-contract:hover,
+.btn-contract:focus {
+  background-color: #188ce8;
 }
