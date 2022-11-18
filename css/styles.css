@@ -670,6 +670,7 @@ p {
   text-align: center;
   justify-content: center;
   gap: 10px;
+  font-weight: 700;
   width: 200px;
   height: 50px;
   letter-spacing: 0.06em;
@@ -714,8 +715,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-left: 28px;
-  padding-right: 52px;
+  padding: 40px;
 }
 .btn-closed {
   position: absolute;
@@ -751,7 +751,6 @@ p {
   line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 44px;
   margin-bottom: 12px;
   color: #212121;
 }
@@ -841,6 +840,9 @@ p {
   color: #757575;
   user-select: none;
   background-color: inherit;
+}
+.modal-checkbox-description {
+  padding-right: 3px;
 }
 .modal-contract .modal-link-contract {
   color: #2196f3;
