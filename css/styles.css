@@ -320,7 +320,7 @@ p {
 .thumb-description {
   position: absolute;
   top: 0;
-  transform: translateY(100%);
+  transform: translateY(110%);
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -721,8 +721,8 @@ p {
   position: absolute;
   height: 30px;
   width: 30px;
-  top: 7px;
-  right: 9px;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
